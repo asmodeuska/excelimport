@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Feltöltés</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="vendor\components\jquery\jquery.min.js"></script>
+    <link rel="stylesheet" href="vendor\twbs\bootstrap\dist\css\bootstrap.min.css" />
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <form enctype="multipart/form-data" id="fileUploadForm" method="post" name="fileUploadForm">
+        <div class="form-group">
+            <input type="file" name="file" id="file" size="150" accept=".xls,.xlsx" required>
+        </div>
+    </form>
+
+    <div id="content"></div>
+</body>
+</html>
+

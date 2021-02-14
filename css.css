@@ -1,0 +1,10 @@
+.form-row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+    display: none;
+}
