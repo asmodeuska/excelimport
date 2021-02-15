@@ -171,8 +171,9 @@ function createTable(json,i){
 	document.getElementById('download-pdf'+i).addEventListener("click", function(){
 		table.download("pdf", i+".pdf");
 	});
-
-
+	
+	console.log(json);
+	console.log(json[i]);
 	var table = new Tabulator("#table_"+i, {
 		data:json[i], 
 		columns:json['columns'+i].map(obj => {
@@ -204,6 +205,9 @@ function createTable(json,i){
 				var b = $("#row_counter"+i).text();
 				var a = parseInt(b);
 				$("#row_counter"+i).html(--a);
+				var b = $("#filter_count"+i).text();
+				var a = parseInt(b);
+				$("#filter_count"+i).html(--a);
 				
 			}}
 	);
@@ -244,7 +248,7 @@ $(document).on("click", "#lekerdez", function () {
 			data: arr[i],
 			url: "printTables.php",
 			success: function (data) {
-				//console.log(data);
+				console.log(data);
 				data = JSON.parse(data);
 				//console.log(data);
 				//console.log(Object.keys(data)[0]);

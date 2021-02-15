@@ -72,7 +72,7 @@ if($i!=0){
     }
     $sql=substr($sql,0,-3);
     $sql.=")";
-    echo $sql;
+    //echo $sql;
     if ($conn->query($sql) !=TRUE){
       echo "Hiba: " . $conn->error;
       exit;
