@@ -15,7 +15,7 @@ function reset(){
 
 function visible(num){
 	var c = document.getElementById(num).hidden;
-	console.log(c);
+	//console.log(c);
 	if (c){
 		document.getElementById(num).hidden=false;
 	}

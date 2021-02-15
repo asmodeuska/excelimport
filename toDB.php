@@ -1,6 +1,6 @@
 <?php
-require 'vendor/autoload.php';
 require "db.php";
+require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 $sheetNumber = $_POST['sheetNumber'];

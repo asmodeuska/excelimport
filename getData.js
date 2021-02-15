@@ -171,9 +171,7 @@ function createTable(json,i){
 	document.getElementById('download-pdf'+i).addEventListener("click", function(){
 		table.download("pdf", i+".pdf");
 	});
-	
-	console.log(json);
-	console.log(json[i]);
+
 	var table = new Tabulator("#table_"+i, {
 		data:json[i], 
 		columns:json['columns'+i].map(obj => {
@@ -248,7 +246,7 @@ $(document).on("click", "#lekerdez", function () {
 			data: arr[i],
 			url: "printTables.php",
 			success: function (data) {
-				console.log(data);
+				//console.log(data);
 				data = JSON.parse(data);
 				//console.log(data);
 				//console.log(Object.keys(data)[0]);
